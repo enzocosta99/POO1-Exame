@@ -1,26 +1,25 @@
 public class FuncionarioProjeto {
 
-    private Integer codigoFuncionario;
-    private Integer numeroProjeto;
+    private Funcionario funcionario;
+    private Projeto projeto;
 
-    public FuncionarioProjeto(Integer codigoFuncionario, Integer numeroProjeto)
+    public FuncionarioProjeto(Funcionario funcionario, Projeto projeto)
     {
-
-        this.setCodigoFuncionario(codigoFuncionario);
-        this.setNumeroProjeto(numeroProjeto);
+        this.setFuncionario(funcionario);
+        this.setProjeto(projeto);
     }
 
-    public Integer getCodigoFuncionario() {
-        return this.codigoFuncionario;
+    public Funcionario getFuncionario() {
+        return this.funcionario;
     }
-    public void setCodigoFuncionario(Integer codigoFuncionario) {
-        this.codigoFuncionario = codigoFuncionario;
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
     }
-    public Integer getNumeroProjeto() {
-        return this.numeroProjeto;
+    public Projeto getProjeto() {
+        return this.projeto;
     }
-    public void setNumeroProjeto(Integer numeroProjeto) {
-        this.numeroProjeto = numeroProjeto;
+    public void setProjeto(Projeto projeto) {
+        this.projeto = projeto;
     }
 
 }

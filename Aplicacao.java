@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class Aplicacao {
 
@@ -32,22 +31,21 @@ public class Aplicacao {
         criarFuncionarioProjeto(funcionario2, projeto1, funcionarioProjetoList);
         criarFuncionarioProjeto(funcionario3, projeto2, funcionarioProjetoList);
 
-        funcionarioCargoList.forEach(f -> System.out.println("Código do funcionário: " + f.getCodigoFuncionario() + "\nCódigo do cargo: " + f.getCodigoCargo()));
-        funcionarioProjetoList.forEach(f -> System.out.println("Código do funcionário: " + f.getCodigoFuncionario() + "\nNúmero do projeto: " + f.getNumeroProjeto()));
-
+        funcionarioCargoList.forEach(f -> System.out.println("Código do funcionário: " + f.getFuncionario().getCodigoFuncionario() + "\nCódigo do cargo: " + f.getCargo().getCodigoCargo()));
+        funcionarioProjetoList.forEach(f -> System.out.println("Código do funcionário: " + f.getFuncionario().getCodigoFuncionario() + "\nNúmero do projeto: " + f.getProjeto().getNumeroProjeto()));
 
     }
 
     public static void criarFuncionarioCargo(Funcionario funcionario, Cargo cargo, Date dataInicioFuncionarioCargo, ArrayList<FuncionarioCargo> funcionarioCargoList) {
 
-        FuncionarioCargo funcionarioCargo = new FuncionarioCargo(funcionario.getCodigoFuncionario(), cargo.getCodigoCargo(), dataInicioFuncionarioCargo);
+        FuncionarioCargo funcionarioCargo = new FuncionarioCargo(funcionario, cargo, dataInicioFuncionarioCargo);
         funcionarioCargoList.add(funcionarioCargo);
 
     };
 
     public static void criarFuncionarioProjeto(Funcionario funcionario, Projeto projeto, ArrayList<FuncionarioProjeto> funcionarioProjetoList) {
 
-        FuncionarioProjeto funcionarioProjeto = new FuncionarioProjeto(funcionario.getCodigoFuncionario(), projeto.getNumeroProjeto());
+        FuncionarioProjeto funcionarioProjeto = new FuncionarioProjeto(funcionario, projeto);
         funcionarioProjetoList.add(funcionarioProjeto);
 
     }

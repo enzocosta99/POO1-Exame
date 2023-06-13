@@ -1,30 +1,28 @@
 import java.util.Date;
 public class FuncionarioCargo {
 
-    private Integer codigoFuncionario;
-    private Integer codigoCargo;
+    private Funcionario funcionario;
+    private Cargo cargo;
     private Date dataInicioFuncionarioCargo;
 
-    public FuncionarioCargo(Integer codigoFuncionario, Integer codigoCargo, Date
-            dataInicioFuncionarioCargo) {
+    public FuncionarioCargo(Funcionario funcionario, Cargo cargo, Date dataInicioFuncionarioCargo) {
 
-        this.setCodigoFuncionario(codigoFuncionario);
-        this.setCodigoCargo(codigoCargo);
+        this.setFuncionario(funcionario);
+        this.setCargo(cargo);
         this.setDataInicioFuncionarioCargo(dataInicioFuncionarioCargo);
-
     }
 
-    public Integer getCodigoFuncionario() {
-        return this.codigoFuncionario;
+    public Funcionario getFuncionario() {
+        return this.funcionario;
     }
-    public void setCodigoFuncionario(Integer codigoFuncionario) {
-        this.codigoFuncionario = codigoFuncionario;
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
     }
-    public Integer getCodigoCargo() {
-        return this.codigoCargo;
+    public Cargo getCargo() {
+        return this.cargo;
     }
-    public void setCodigoCargo(Integer codigoCargo) {
-        this.codigoCargo = codigoCargo;
+    public void setCargo(Cargo cargo) {
+        this.cargo = cargo;
     }
     public Date getDataInicioFuncionarioCargo() {
         return this.dataInicioFuncionarioCargo;
