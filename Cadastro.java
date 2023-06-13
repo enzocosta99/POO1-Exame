@@ -1,5 +1,3 @@
-package entities;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -59,7 +57,7 @@ public class Cadastro {
         Endereco e = new Endereco();
         e.setCidade(scan.nextLine());
 
-        f.setPessoa(scan.nextLine());
+//        f.setPessoa(scan.nextLine());
         getListfuncionario().add(f);
     }
 
@@ -73,30 +71,30 @@ public class Cadastro {
         getListcargo().add(c);
     }
 
-    public void addFuncCargo(){
-        FuncCargo f = new FuncCargo();
-        System.out.println("Informe a data do cargo: ");
-        f.setFunc(scan.nextInt());
-        pedido.addItem(listProduto);
-        pedido.setTotal();
-        listPedido.add(pedido);
-    }
-    public void cadastro(List<FuncCargo> funcCargo){
-        Cargo cargo1 = new FuncCargo();
-        System.out.println("Informe o codigo do cargo: ");
-        funcCargo(scan.nextInt());
-        System.out.println("Informe o código do Produto: ");
-        Integer codigo = scan.nextInt();
-        item.setProduto(getProdutoByCodigo(codigo, listProduto));
-        if (item.getProduto() != null){
-            System.out.println("Informe quantidade: ");
-            item.setQuantidade(scan.nextInt());
-            getItens().add(item);
-        } else {
-            System.out.println("Produto não encontrado");
-        }
-
-    }
+//    public void addFuncCargo(){
+//        FuncCargo f = new FuncCargo();
+//        System.out.println("Informe a data do cargo: ");
+//        f.setFunc(scan.nextInt());
+//        pedido.addItem(listProduto);
+//        pedido.setTotal();
+//        listPedido.add(pedido);
+//    }
+//    public void cadastro(List<FuncCargo> funcCargo){
+//        Cargo cargo1 = new FuncCargo();
+//        System.out.println("Informe o codigo do cargo: ");
+//        funcCargo(scan.nextInt());
+//        System.out.println("Informe o código do Produto: ");
+//        Integer codigo = scan.nextInt();
+//        item.setProduto(getProdutoByCodigo(codigo, listProduto));
+//        if (item.getProduto() != null){
+//            System.out.println("Informe quantidade: ");
+//            item.setQuantidade(scan.nextInt());
+//            getItens().add(item);
+//        } else {
+//            System.out.println("Produto não encontrado");
+//        }
+//
+//    }
 
 }
 

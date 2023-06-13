@@ -1,5 +1,3 @@
-package entities;
-
 public class Pessoa {
 
     private String nome;

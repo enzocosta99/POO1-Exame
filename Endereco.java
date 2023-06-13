@@ -1,5 +1,3 @@
-package entities;
-
 public class Endereco {
 
     private String logradouro;
