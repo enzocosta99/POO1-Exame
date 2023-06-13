@@ -1,56 +1,51 @@
 import java.util.Date;
-
 public class Projeto {
 
-    private Integer num_projeto;
-    private String tit_projeto;
-    private String dsc_projeto;
-    private Date dti_projeto;
-    private Date dtf_projeto;
+    private Integer numeroProjeto;
+    private String tituloProjeto;
+    private String descricaoProjeto;
+    private Date dataInicioProjeto;
+    private Date dataFimProjeto;
 
-    public Projeto() {}
-    public Projeto(String tit_projeto, String dsc_projeto, Date dti_projeto, Date dtf_projeto, Integer num_projeto) {
-        this.tit_projeto = tit_projeto;
-        this.dsc_projeto = dsc_projeto;
-        this.dti_projeto = dti_projeto;
-        this.dtf_projeto = dtf_projeto;
-        this.num_projeto = num_projeto;
-    }
+    public Projeto(Integer numeroProjeto, String tituloProjeto, String
+            descricaoProjeto, Date dataInicioProjeto, Date dataFimProjeto) {
 
-    public Projeto(Integer num_projeto) {
-        this.num_projeto = num_projeto;
+        this.setNumeroProjeto(numeroProjeto);
+        this.setTituloProjeto(tituloProjeto);
+        this.setDescricaoProjeto(descricaoProjeto);
+        this.setDataInicioProjeto(dataInicioProjeto);
+        this.setDataFimProjeto(dataFimProjeto);
     }
 
-    public Integer getNum_projeto() {
-        return num_projeto;
+    public Integer getNumeroProjeto() {
+        return this.numeroProjeto;
     }
-    public void setNum_projeto(Integer num_projeto) {
-        this.num_projeto = num_projeto;
+    public void setNumeroProjeto(Integer numero) {
+        this.numeroProjeto = numero;
     }
-    public String getTit_projeto() {
-        return tit_projeto;
+    public String getTituloProjeto() {
+        return this.tituloProjeto;
     }
-    public void setTit_projeto(String tit_projeto) {
-        this.tit_projeto = tit_projeto;
+    public void setTituloProjeto(String titulo) {
+        this.tituloProjeto = titulo;
     }
-    public String getDsc_projeto() {
-        return dsc_projeto;
+    public String getDescricaoProjeto() {
+        return this.descricaoProjeto;
     }
-    public void setDsc_projeto(String dsc_projeto) {
-        this.dsc_projeto = dsc_projeto;
+    public void setDescricaoProjeto(String descricao) {
+        this.descricaoProjeto = descricao;
     }
-    public Date getDti_projeto() {
-        return dti_projeto;
+    public Date getDataInicioProjeto() {
+        return this.dataInicioProjeto;
     }
-    public void setDti_projeto(Date dti_projeto) {
-        this.dti_projeto = dti_projeto;
+    public void setDataInicioProjeto(Date dataInicio) {
+        this.dataInicioProjeto = dataInicio;
     }
-    public Date getDtf_projeto() {
-        return dtf_projeto;
+    public Date getDataFimProjeto() {
+        return this.dataFimProjeto;
     }
-    public void setDtf_projeto(Date dtf_projeto) {
-        this.dtf_projeto = dtf_projeto;
+    public void setDataFimProjeto(Date dataFim) {
+        this.dataFimProjeto = dataFim;
     }
-
 
 }

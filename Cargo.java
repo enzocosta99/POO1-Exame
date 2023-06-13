@@ -1,35 +1,24 @@
 public class Cargo {
 
-    private Integer cod_cargo;
-    private String nom_cargo;
+    private Integer codigoCargo;
+    private String nomeCargo;
 
-    public Cargo() {}
-    public Cargo(Integer cod_cargo, String nom_cargo) {
-        this.setCod_cargo(cod_cargo);
-        this.setNom_cargo(nom_cargo);
+    public Cargo(Integer codigoCargo, String nomeCargo) {
+        this.setCodigoCargo(codigoCargo);
+        this.setNomeCargo(nomeCargo);
     }
 
-    public Integer getCod_cargo() {
-        return cod_cargo;
+    public Integer getCodigoCargo() {
+        return this.codigoCargo;
+    }
+    public void setCodigoCargo(Integer codigo) {
+        this.codigoCargo = codigo;
+    }
+    public String getNomeCargo() {
+        return this.nomeCargo;
+    }
+    public void setNomeCargo(String nome) {
+        this.nomeCargo = nome;
     }
 
-    public void setCod_cargo(Integer cod_cargo) {
-        this.cod_cargo = cod_cargo;
-    }
-
-    public String getNom_cargo() {
-        return nom_cargo;
-    }
-
-    public void setNom_cargo(String nom_cargo) {
-        this.nom_cargo = nom_cargo;
-    }
-
-    @Override
-    public String toString() {
-        return "Cargo{" +
-                "cod_cargo=" + cod_cargo +
-                ", nom_cargo='" + nom_cargo + '\'' +
-                '}';
-    }
 }

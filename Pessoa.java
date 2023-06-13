@@ -1,13 +1,14 @@
+import java.util.Date;
+
 public class Pessoa {
 
     private String nome;
-    private Endereco endereco;
 
-    public Pessoa(){}
+    private Date dtaNasc;
 
-    public Pessoa(String nome, Endereco endereco) {
+    public Pessoa(String nome, Date dtaNasc ) {
         this.nome = nome;
-        this.endereco = endereco;
+        this.dtaNasc = dtaNasc;
     }
 
     public String getNome() {
@@ -18,11 +19,12 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public Date getdtaNasc() {
+        return dtaNasc;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public void setDtNasc(Date dtaNasc) {
+        this.dtaNasc = dtaNasc;
     }
+
 }
